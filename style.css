@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #ccc;
+}
+h1{
+    margin-left: 10vw;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.botao{
+    width: 200px;
+    border: 1px solid;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(49, 143, 96);
+}
+
+.novasala{
+    width: 100vw;
+    height: 15vh;
+    background-color: lightgray;
+    margin: 8px 0 0 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal {
+    width: 50vw;
+    height: 25vw;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ativamodal {
+    width: 50vw;
+    height: 25vw;
+    display: flex;
+    /* flex-direction: column; */
+    position: fixed;
+    background: indigo;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    align-items: center;
+    transform: translateY(700px); 
+    transition: 2s;
+}
+
+.modal input, .modal button {
+    width:80%;
+    height:10%;
+    background:grey;
+}
+
